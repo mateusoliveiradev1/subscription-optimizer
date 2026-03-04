@@ -1,6 +1,6 @@
 ---
 name: Subscription Optimizer Agent — MCP-Powered SaaS Cost Intelligence Engine
-description: Analyze, Orchestrate, and Validate operations to: Connects to enterprise databases via the Model Context Protocol (MCP) to extract live SaaS license data, identifies duplicate and overlapping tools deterministically using Python, and synthesizes a cost-cutting SOP with exact savings projections. ROI: identifies an average of 15-30% of recoverable SaaS budget in minutes without requiring a CSV export.
+description: "Analyze, Orchestrate, and Validate operations to: Connects to enterprise databases via the Model Context Protocol (MCP) to extract live SaaS license data, identifies duplicate and overlapping tools deterministically using Python, and synthesizes a cost-cutting SOP with exact savings projections. ROI: identifies an average of 15-30% of recoverable SaaS budget in minutes without requiring a CSV export."
 ---
 
 # 🎯 Goal
