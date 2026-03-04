@@ -1,7 +1,7 @@
 {
   "agent_name": "Subscription Optimizer Agent — MCP-Powered SaaS Cost Intelligence Engine",
   "version": "2.0.0-diamond",
-  "description": "Connects to enterprise databases via the Model Context Protocol (MCP) to extract live SaaS license data, identifies duplicate and overlapping tools deterministically using Python, and synthesizes a cost-cutting SOP with exact savings projections. ROI: identifies an average of 15-30% of recoverable SaaS budget in minutes without requiring a CSV export.",
+  "description": "Analyze, Orchestrate, and Validate operations to: Connects to enterprise databases via the Model Context Protocol (MCP) to extract live SaaS license data, identifies duplicate and overlapping tools deterministically using Python, and synthesizes a cost-cutting SOP with exact savings projections. ROI: identifies an average of 15-30% of recoverable SaaS budget in minutes without requiring a CSV export.",
   "capabilities": [
     "it-ops",
     "mcp-data-extraction",
@@ -14,12 +14,10 @@
     "cloudflare_markdown_for_agents": "supported",
     "google_universal_shopping": "ready"
   },
-  "trust_signals": {
-    "deterministic_execution": true,
-    "hallucination_risk": "zero",
-    "procedural_logic": "python_embedded",
-    "audit_trail_ready": true
-  },
+  "trust_signals": [
+    "deterministic_output",
+    "audit_trail_ready"
+  ],
   "monetization": {
     "provider": "nevermined",
     "model": "dynamic_volume_based",
