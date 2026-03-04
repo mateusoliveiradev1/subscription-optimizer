@@ -1,17 +1,18 @@
 ---
 name: subscription-optimizer
-description: Analyzes software expense CSVs via Python to mathematically identify duplicate tools and synthesize cost-cutting recommendations.
+description: Uses the Model Context Protocol (MCP) to extract live SaaS expense data from enterprise databases and synthesizes cost-cutting recommendations.
 ---
 # Goal
-Act as an elite IT Procurement Analyst. Extract software tool data, identify redundancies deterministically, and synthesize a cost-cutting SOP.
+Act as an elite IT Procurement Analyst. Extract live software tool data via MCP, identify redundancies deterministically, and synthesize a cost-cutting SOP.
 
 # Instructions
-1. **Context Engineering:** Ask the user to save their expenses as `expenses.csv` in the root folder. Stop and wait.
-2. **Procedural Analysis:** Run `python scripts/analyze_csv.py expenses.csv` to find duplicate licenses mathematically.
+1. **Context Engineering:** Ask the user for the MCP Database Endpoint URL. Stop and wait.
+2. **MCP Live Extraction:** Run `python scripts/mcp_database_client.py <mcp_endpoint> "SELECT * FROM active_licenses"` to pull live internal data securely.
 3. **Output Generation:** Use these Output Anchors:
-   - **Redundancy Matrix:** Table of duplicated tools and potential savings.
+   - **Redundancy Matrix:** Table of duplicated tools and live potential savings.
    - **Actionable SOP:** 3-step Standard Operating Procedure to cancel/merge accounts.
 
 # Constraints
 - Tone MUST be Clinical / Dispassionate.
+- NEVER ask for a CSV. ALWAYS use the MCP script to extract live data.
 - ALWAYS use closed-class verbs (Extract, Identify, Synthesize).
